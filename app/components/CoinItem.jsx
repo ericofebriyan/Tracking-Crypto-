@@ -14,7 +14,7 @@ const CoinItem = ({ coin }) => {
       <View style={styles.rightSection}>
         <Text style={styles.price}>${coin.current_price.toFixed(2)}</Text>
         <Text style={[styles.change, { color: coin.price_change_percentage_24h >= 0 ? '#4ECDC4' : '#FF6B6B' }]}>
-          {coin.price_change_percentage_24h.toFixed(2)}%
+          {coin.price_change_percentage_24h.toFixed(2)}
         </Text>
       </View>
     </View>
